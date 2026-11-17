@@ -1,0 +1,18 @@
+general:
+  base_filter: "status:pending"
+  
+actions:
+  edit:
+    name: "Edit Notes"
+    command: "echo 'Would edit: $ANNOTATION'"
+    regex: ".*"
+    
+  view:
+    name: "View File"  
+    command: "echo 'Would view: $ANNOTATION'"
+    regex: ".*\\.txt$"
+    
+  open_url:
+    name: "Open URL"
+    command: "echo 'Would open: $ANNOTATION'"
+    regex: "https?://.*"
